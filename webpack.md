@@ -9,6 +9,9 @@ loader：
     插件可以完成loader不能完成的工作；
     插件的使用一般是在webpack的配置信息plugins选项中指定；
 局部安装webpack：
-    cnpm i webpack -D(-D为开发环境，-S为生产环境),
+    cnpm i webpack -D(-D为开发环境，-S为生产环境)
+打包css和图片：
+    需要使用插件（loader）；cnpm install css-loader style-loader -S （处理css文件）
+                          cnpm install url-loader flie-loader -S   (处理样式中图片应用的插件)
 
 

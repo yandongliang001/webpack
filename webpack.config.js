@@ -4,5 +4,13 @@ module.exports = {
     output:{
         filename:'bundle.js',//出口文件名 打包之后的文件名
         path:path.resolve(__dirname,'dist/js')//出口文件位置 打包之后的文件放置的位置
-    }
+    },
+    module: {
+        rules: [
+          {
+            test: /\.css$/,
+            use: [ 'style-loader', 'css-loader' ]
+          }
+        ]
+      }
 }
